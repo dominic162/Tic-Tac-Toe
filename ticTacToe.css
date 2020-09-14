@@ -6,7 +6,7 @@ header{
     width: 100%;
     height: 100px;
     display: flex;
-    background: linear-gradient(0deg,rgb(15, 86, 153),rgb(70, 168, 233));
+    background: linear-gradient(190deg,rgb(15, 86, 153),rgb(70, 168, 233));
     justify-content: space-around;
     align-items: center;
     position: sticky;
@@ -38,13 +38,12 @@ header p{
     font-size: 100px;
     text-align:center;
     border-radius: 10px;
+    animation-name: check;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 #selector{
     margin: 10px 10px;
-}
-.items{
-    animation-name: check;
-    animation-duration: 2s;
 }
 input{
     margin: 5px 5px;
@@ -58,5 +57,15 @@ input{
     }
     to{
         transform: rotateY(180deg);
+    }
+}
+@media only screen and (max-width:500px){
+    .items{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+    input{
+        width: 100px;
     }
 }
