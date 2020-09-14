@@ -92,7 +92,7 @@ document.getElementById('main-content').addEventListener('click',function(e){
                 alert(win)
             }
             if(winner(p2symbol)){
-                win=p1name+' wins the game'
+                win=p2name+' wins the game'
                 alert(win)
             }
         }
