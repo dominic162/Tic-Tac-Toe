@@ -69,3 +69,12 @@ input{
         width: 100px;
     }
 }
+@media only screen and (max-width:340px){
+    .items{
+        width: 80px;
+        height: 80px;
+    }
+    input{
+        width: 80px;
+    }
+}
