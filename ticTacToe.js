@@ -51,7 +51,8 @@ function winner(symbol){
     return false
 }
 console.log(a['item1'])
-count=1;
+var count=1;
+var flag=0;
 var p1=document.getElementById('player1')
 var p1name=''
 p1.addEventListener('input',function(e){
@@ -89,11 +90,18 @@ document.getElementById('main-content').addEventListener('click',function(e){
             let win
             if(winner(p1symbol)){
                 win=p1name+' wins the game'
+                flag=1;
                 alert(win)
             }
             if(winner(p2symbol)){
                 win=p2name+' wins the game'
+                flag=1;
                 alert(win)
+            }
+            if(count===10){
+                if(flag===0){
+                    alert('No one wins the game :-(')
+                }
             }
         }
     }
