@@ -45,7 +45,7 @@ function winner(symbol){
     if(checker('item1','item5','item9',symbol)){
         return true
     }
-    if(checker('item3','item5','item9',symbol)){
+    if(checker('item3','item5','item7',symbol)){
         return true
     }
     return false
