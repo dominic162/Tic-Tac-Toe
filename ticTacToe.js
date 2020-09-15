@@ -74,7 +74,7 @@ p2s.addEventListener('input',function(e){
     p2symbol=e.target.value
 })
 document.getElementById('main-content').addEventListener('click',function(e){
-    if(p1name!='' && p1s!='' && p2name!='' && p2s!=''){
+    if(p1name!='' && p1symbol!='' && p2name!='' && p2symbol!=''){
         let idr=e.target.id
         let element=document.getElementById(idr)
         if (a[idr]=='0') {
