@@ -75,34 +75,39 @@ p2s.addEventListener('input',function(e){
 })
 document.getElementById('main-content').addEventListener('click',function(e){
     if(p1name!='' && p1symbol!='' && p2name!='' && p2symbol!=''){
-        let idr=e.target.id
-        let element=document.getElementById(idr)
-        if (a[idr]=='0') {
-            if(count%2==1){
-                a[idr]=p1symbol
-                element.innerHTML=p1symbol;
-            }
-            else{
-                a[idr]=p2symbol
-                element.innerHTML=p2symbol
-            }
-            count++;
-            let win
-            if(winner(p1symbol)){
-                win=p1name+' wins the game'
-                flag=1;
-                alert(win)
-            }
-            if(winner(p2symbol)){
-                win=p2name+' wins the game'
-                flag=1;
-                alert(win)
-            }
-            if(count===10){
-                if(flag===0){
-                    alert('No one wins the game :-(')
+        if(p1symbol!=p2symbol && p1name!=p2name){
+            let idr=e.target.id
+            let element=document.getElementById(idr)
+            if (a[idr]=='0') {
+                if(count%2==1){
+                    a[idr]=p1symbol
+                    element.innerHTML=p1symbol;
+                }
+                else{
+                    a[idr]=p2symbol
+                    element.innerHTML=p2symbol
+                }
+                count++;
+                let win
+                if(winner(p1symbol)){
+                    win=p1name+' wins the game'
+                    flag=1;
+                    alert(win)
+                }
+                if(winner(p2symbol)){
+                    win=p2name+' wins the game'
+                    flag=1;
+                    alert(win)
+                }
+                if(count===10){
+                    if(flag===0){
+                        alert('No one wins the game :-(')
+                    }
                 }
             }
+        }
+        else{
+            alert("OOPS\nboth field can't be same");
         }
     }
     else{
