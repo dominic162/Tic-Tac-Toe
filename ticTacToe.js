@@ -50,7 +50,18 @@ function winner(symbol){
     }
     return false
 }
-console.log(a['item1'])
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
 var count=1;
 var flag=0;
 var p1=document.getElementById('player1')
