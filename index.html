@@ -1,58 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="ticTacToe.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand">TIC TAC TOE</a>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="ticTacToe.css">
+
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  
+  <div id="header">
+    <div style="width: 50%;">
+      <p style="float: right;">TIC TAC TOE</p>
+    </div>
+    <div style="width: 50%;">
+      <div class="theme-switch-wrapper">
+        <em style="color: rgb(216, 207, 207); margin-right: 10px ;">Dark Mode!</em>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#selector">PLAY<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+    </div>
+  </div>
+  
+  <div id="selector">
+    <input id="player1" name="name1" placeholder="PLAYER 1">
+    <input id="player1s" name="symbol1" placeholder="SYMBOL" maxlength="1">
+    <br>
+    <input id="player2" name="name2" placeholder="PLAYER 2">
+    <input id="player2s" name="symbol2" placeholder="SYMBOL" maxlength="1">
+  </div>
+  <div id="main-content" class="margin">
+    <div id="firstrow" class="wrapper">
+      <div id="item1" class="items"></div>
+      <div id="item2" class="items"></div>
+      <div id="item3" class="items" class="animate"></div>
+    </div>
+    <div id="secondrow" class="wrapper">
+      <div id="item4" class="items"></div>
+      <div id="item5" class="items"></div>
+      <div id="item6" class="items"></div>
+    </div>
+    <div id="thirdrow" class="wrapper">
+      <div id="item7" class="items"></div>
+      <div id="item8" class="items"></div>
+      <div id="item9" class="items"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="ticTacToe.js"></script>
   
   
-    <div id="selector">
-        <input id="player1" name="name1" placeholder="PLAYER 1">
-        <input id="player1s" name="symbol1" placeholder="SYMBOL">
-        <br>
-        <input id="player2" name="name2" placeholder="PLAYER 2">
-        <input id="player2s" name="symbol2" placeholder="SYMBOL">
-    </div>
-    <div id="main-content" class="margin">
-        <div id="firstrow" class="wrapper">
-            <div id="item1" class="items"></div>
-            <div id="item2" class="items"></div>
-            <div id="item3" class="items" class="animate"></div>
-        </div>
-        <div id="secondrow" class="wrapper">
-            <div id="item4" class="items"></div>
-            <div id="item5" class="items"></div>
-            <div id="item6" class="items"></div>
-        </div>
-        <div id="thirdrow" class="wrapper">
-            <div id="item7" class="items"></div>
-            <div id="item8" class="items"></div>
-            <div id="item9" class="items"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="ticTacToe.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
