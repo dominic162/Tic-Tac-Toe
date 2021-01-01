@@ -115,6 +115,9 @@ body{
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     color: rgb(90, 202, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #selector{
     margin: 10px 10px;
